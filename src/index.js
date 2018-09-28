@@ -45,15 +45,15 @@ export default declare((api, opts) => {
     defaultPlugins[0][1].corejs = opts.corejs;
   }
 
-  if (opts.all) {
+  if ('all' in opts) {
     plugins = [...defaultPlugins, ...extPlugins];
   }
 
-  if (opts.targets) {
+  if ('targets' in opts) {
     presets[0][1].targets = opts.targets;
   }
 
-  if (opts.useBuiltIns) {
+  if ('useBuiltIns' in opts) {
     presets[0][1].useBuiltIns = opts.useBuiltIns;
   }
 
