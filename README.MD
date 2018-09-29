@@ -79,4 +79,4 @@ const extPlugins = [
 
 ## example
 
-You can find examples in [this repo](https://github.com/htoooth/babel-preset-htoooth-test).
+You can find examples in [this repo](https://github.com/RaichuCli/babel-preset-htoooth-test).
