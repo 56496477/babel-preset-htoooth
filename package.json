@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-htoooth",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A Babel preset for my env.",
   "main": "lib/index.js",
   "scripts": {
