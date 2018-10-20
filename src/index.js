@@ -15,7 +15,7 @@ const overrides = [{
 }];
 
 const defaultPlugins = [
-  ["@babel/plugin-transform-runtime", {}],
+  ["@babel/plugin-transform-runtime", { useESModules: true}],
   "@babel/plugin-syntax-dynamic-import",
   "@babel/plugin-syntax-import-meta",
   "@babel/plugin-proposal-export-namespace-from",
@@ -59,6 +59,10 @@ export default declare((api, opts) => {
 
   if ('modules' in opts) {
     presets[0][1].modules = opts.modules;
+  }
+
+  if ('useESModules' in opts) {
+    presets[0][1].useESModules = opts.useESModules;
   }
 
   return {

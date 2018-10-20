@@ -36,9 +36,12 @@ module.exports = {
 module.exports = {
   presets: [
     ['htoooth', {
+      corejs: false, // defaullt false, same as @babel/plugin-transform-runtim 's options corejs
       all: true,
       targets: {}, // same as @babel/env targets
-      useBuiltIns: "usage (default) | entry"
+      useBuiltIns: "usage (default) | entry",
+      modules: 'commonjs', // same as @babel/plugin-transform-runtim 's options modules
+      useESModules: true,  // default true, @babel/plugin-transform-runtim 's options useESModules
     }]
   ]
 };
